@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main5Activity">
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="wrap_content"
+        android:layout_height="112dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="290dp"
+        android:background="#009688"
+        app:layout_constraintBottom_toTopOf="@+id/book_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        app:layout_constraintVertical_bias="0.65999997" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="71dp"
+        android:layout_marginStart="32dp"
+        android:fontFamily="@font/aladin"
+        android:text="@string/home_page"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toStartOf="@+id/view4"
+        app:layout_constraintHorizontal_bias="0.018"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/book_btn"
+        style="@android:style/Widget.Material.Light.Button.Toggle"
+        android:layout_width="164dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="123dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="37dp"
+        android:background="#009688"
+        android:fontFamily="@font/aladin"
+        android:onClick="book_btn"
+        android:text="@string/book"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/cancel_btn "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/cancel_btn "
+        android:layout_width="164dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="123dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="37dp"
+        android:background="#009688"
+        android:fontFamily="@font/aladin"
+        android:onClick="cancel_btn"
+        android:text="@android:string/cancel"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/update_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/update_btn"
+        android:layout_width="164dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="123dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="37dp"
+        android:background="#009688"
+        android:fontFamily="@font/aladin"
+        android:onClick="update_btn"
+        android:text="@string/update"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/em_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/em_btn"
+        android:layout_width="164dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="123dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="137dp"
+        android:background="#009688"
+        android:fontFamily="@font/aladin"
+        android:onClick="em_btn"
+        android:text="@string/emergency"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
